@@ -1,0 +1,1 @@
+ffmpeg -rtsp_transport tcp -i "rtsp://XXX:554/user=XX&password=XX&channel=XX5&stream=x(0-maunstream;1-substream).sdp" -rtsp_transport tcp -i "rtsp://192.168.3XXXXX:554/user=XXX&passwordXXXXX&channel=XXX&stream=x(0-XXXm).sdp" -map 0  -vcodec copy C://HOST/htdocs/aaa/index.m3u8 -map 1 -vcodec copy C://HOST/htdocs/aaa/index1.m3u8 -y
